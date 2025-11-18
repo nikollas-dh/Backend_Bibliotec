@@ -23,7 +23,7 @@ export async function criarReserva(req, res) {
         if (new Date(data_devolucao) <= new Date(data_retirada)) {
             return res.status(400).json({
                 sucesso: false,
-                mensagem: 'A data de devolução deve ser posterior à data de retirada'
+                mensagem: 'A data deve ser no formato ano/mês/dia e a devolução deve ser posterior à data de retirada'
             });
         }
                 

@@ -10,8 +10,6 @@ export async function listarFavoritos(req, res) {
     }
 }
 
-
-
 export async function criarFavoritos(req, res) {
     console.log(req.body)
     try {
